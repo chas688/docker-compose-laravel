@@ -106,7 +106,9 @@ services:
       - laravel
 
   mailhog:
-    image: mailhog/mailhog:latest
+    #image: mailhog/mailhog:latest
+    #For ARM64 support
+    image: anatomicjc/mailhog:latest
     ports:
       - "1025:1025"
       - "8025:8025"
